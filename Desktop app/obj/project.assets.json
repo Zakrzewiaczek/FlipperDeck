@@ -343,11 +343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\FlipperDeck.csproj",
+      "projectUniqueName": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\FlipperDeck.csproj",
       "projectName": "FlipperDeck",
-      "projectPath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\FlipperDeck.csproj",
+      "projectPath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\FlipperDeck.csproj",
       "packagesPath": "C:\\Users\\jzakr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\obj\\",
+      "outputPath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

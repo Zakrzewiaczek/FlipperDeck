@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4eEwFpqD+0A=",
+  "dgSpecHash": "ht08IKfqzs4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\FlipperDeck.csproj",
+  "projectFilePath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\FlipperDeck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jzakr\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\jzakr\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",

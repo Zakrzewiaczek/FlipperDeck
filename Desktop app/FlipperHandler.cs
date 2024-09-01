@@ -3,34 +3,31 @@ using System.IO.Ports;
 
 namespace FlipperDeck
 {
-    internal class FlipperHandler
+    internal class FlipperHandler : IDisposable
     {
         private readonly SerialPort _serialPort = new();
 
-        public SerialPort SerialPort
-        {
-            get => _serialPort;
-        }
+        public SerialPort SerialPort => _serialPort;
 
         public void SetSerialPortData(string? portName, int baudRate)
         {
-            if (SerialPort.IsOpen)
+            if (_serialPort.IsOpen)
             {
-                SerialPort.Close();
+                _serialPort.Close();
             }
 
-            SerialPort.PortName = portName;
-            SerialPort.BaudRate = baudRate;
-            SerialPort.Parity = Parity.None;
-            SerialPort.DataBits = 8;
-            SerialPort.StopBits = StopBits.One;
+            _serialPort.PortName = portName ?? throw new ArgumentNullException(nameof(portName));
+            _serialPort.BaudRate = baudRate;
+            _serialPort.Parity = Parity.None;
+            _serialPort.DataBits = 8;
+            _serialPort.StopBits = StopBits.One;
         }
 
         public bool TryOpenPort()
         {
             try
             {
-                SerialPort.Open();
+                _serialPort.Open();
                 return true;
             }
             catch (Exception)
@@ -38,11 +35,12 @@ namespace FlipperDeck
                 return false;
             }
         }
+
         public bool TryClosePort()
         {
             try
             {
-                SerialPort.Close();
+                _serialPort.Close();
                 return true;
             }
             catch (Exception)
@@ -50,14 +48,13 @@ namespace FlipperDeck
                 return false;
             }
         }
-        public bool IsOpen()
-        {
-            return SerialPort.IsOpen;
-        }
+
+        public bool IsOpen() => _serialPort.IsOpen;
 
         public void Dispose()
         {
-            SerialPort?.Dispose();
+            _serialPort?.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }

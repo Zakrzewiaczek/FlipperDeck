@@ -1,15 +1,15 @@
 ﻿using System;
-using System.IO.Ports;
 using System.Management;
 
 namespace FlipperDeck
 {
-    internal class COMWatcher
+    internal class COMWatcher : IDisposable
     {
         public event EventHandler<DeviceChangedEventArgs>? DeviceChanged;
 
         private readonly ManagementEventWatcher _arrivalWatcher;
         private readonly ManagementEventWatcher _removalWatcher;
+        private bool _disposed;
 
         public COMWatcher()
         {
@@ -40,6 +40,25 @@ namespace FlipperDeck
             _arrivalWatcher.Stop();
             _removalWatcher.Stop();
         }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_disposed) return;
+
+            if (disposing)
+            {
+                _arrivalWatcher.Dispose();
+                _removalWatcher.Dispose();
+            }
+
+            _disposed = true;
+        }
     }
 
     public class DeviceChangedEventArgs : EventArgs
@@ -47,3 +66,4 @@ namespace FlipperDeck
         public bool IsConnected { get; set; }
     }
 }
+
