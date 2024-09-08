@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlipperDeck")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dac4476f20996326f63922e5871422a40888ea55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddce474c53bf4f435006fce5fdf45ce8bc2da1cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlipperDeck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlipperDeck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

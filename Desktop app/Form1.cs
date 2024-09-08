@@ -23,8 +23,10 @@ namespace FlipperDeck
             FlipperHandler.SerialPort.DataReceived += FlipperDataReceived;
             CustomTitleBarHandler titleBarHandler = new(title_bar_panel, this);
 
-            userEventsManager = new UserEventsManager([up_event_set, down_event_set, left_event_set, right_event_set, ok_event_set]);
+            userEventsManager = new UserEventsManager();
             userEventsManager.LoadUserEventsFromFile();
+
+
         }
         private void MinimizeApplication(object sender, EventArgs e)
         {
@@ -37,6 +39,7 @@ namespace FlipperDeck
             FlipperHandler.Dispose();
 
             userEventsManager.SaveUserEventsToFile();
+            userEventsManager.Dispose();
 
             Application.Exit();
         }
@@ -166,13 +169,12 @@ namespace FlipperDeck
             string[] names_list = ["up", "down", "left", "right", "ok"];
             int index_of = Array.IndexOf(names_list, btn_name);
             int index_to_saving = isPressedSelected ? index_of + 4 : index_of;
-            int index_to_reading = isPressedSelected ? index_of : index_of + 4;
             
             ComboBox comboBox = (ComboBox)Controls.Find($"{btn_name}_event_set", true)[0];
-            userEventsManager.SaveUserEvent(index_to_saving, comboBox, context);
+            //userEventsManager.SaveUserEvent(index_to_saving, comboBox.Text, context);
 
-            (ComboBox newComboBox, context) = userEventsManager.GetUserEvent(index_to_reading);
-            if(!newComboBox.Equals(new ComboBox())) comboBox = newComboBox;
+            // Reading data from class
+            LoadComboBoxesAndContexts(userEventsManager);
 
             _ = context;
 
@@ -184,6 +186,28 @@ namespace FlipperDeck
                 Resources.held_lbl;
 
             #endregion
+        }
+
+        private void LoadComboBoxesAndContexts(UserEventsManager userEventsManager)
+        {
+            //List<ComboBox> comboBoxes = [up_event_set, down_event_set, left_event_set, right_event_set, ok_event_set];
+            bool[] isHeldChecked = [up_held_rb.Checked, down_held_rb.Checked, left_held_rb.Checked, right_held_rb.Checked, ok_held_rb.Checked];
+            string[] names_list = ["up", "down", "left", "right", "ok"];
+            int index = 0;
+
+            foreach (string name in userEventsManager.GetAllSavedEventBoxes(isHeldChecked))
+            {
+                ComboBox comboBox = (ComboBox?)settingsTableLayoutPanel.Controls[$"{names_list[index]}_event_set"] ?? new ComboBox();
+                comboBox.Text = "XXX";
+                ++index;
+            }
+
+            index = 0;
+            foreach (string context in userEventsManager.GetAllSavedEventContents(isHeldChecked))
+            {
+                // Do something with context
+                ++index;
+            }
         }
     }
 }

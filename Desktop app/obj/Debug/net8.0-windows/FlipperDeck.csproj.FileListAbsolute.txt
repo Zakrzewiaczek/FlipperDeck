@@ -28,3 +28,34 @@ C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\bin\Debug\net8.0
 C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\obj\Debug\net8.0-windows\FlipperDeck.csproj.AssemblyReference.cache
 C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\obj\Debug\net8.0-windows\FlipperD.21216E26.Up2Date
 C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\bin\Debug\net8.0-windows\FlipperDeck.dll.config
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.exe
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.dll.config
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.deps.json
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.runtimeconfig.json
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\FlipperDeck.pdb
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.csproj.AssemblyReference.cache
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.Form1.resources
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.Properties.Resources.resources
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.csproj.GenerateResource.cache
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.AssemblyInfoInputs.cache
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.AssemblyInfo.cs
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.csproj.CoreCompileInputs.cache
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.sourcelink.json
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperD.21216E26.Up2Date
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\refint\FlipperDeck.dll
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.pdb
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\FlipperDeck.genruntimeconfig.cache
+C:\Users\jzakr\Desktop\Pliki\Visual Studio Projects\FlipperDeck\Desktop app\obj\Debug\net8.0-windows\ref\FlipperDeck.dll

@@ -48,7 +48,7 @@
             connection_panel = new Panel();
             disconnect_btn = new Button();
             up_event_set = new ComboBox();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            settingsTableLayoutPanel = new TableLayoutPanel();
             panel5 = new Panel();
             ok_pressed_rb = new RadioButton();
             ok_held_rb = new RadioButton();
@@ -100,7 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)nav_ok).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nav_back).BeginInit();
             connection_panel.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
+            settingsTableLayoutPanel.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
             panel3.SuspendLayout();
@@ -347,45 +347,45 @@
             up_event_set.Size = new Size(121, 23);
             up_event_set.TabIndex = 19;
             // 
-            // tableLayoutPanel1
+            // settingsTableLayoutPanel
             // 
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.ColumnCount = 5;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel1.Controls.Add(panel5, 4, 2);
-            tableLayoutPanel1.Controls.Add(panel4, 3, 2);
-            tableLayoutPanel1.Controls.Add(panel3, 2, 2);
-            tableLayoutPanel1.Controls.Add(panel2, 1, 2);
-            tableLayoutPanel1.Controls.Add(up_rb_panel, 0, 2);
-            tableLayoutPanel1.Controls.Add(ok_event_set, 4, 3);
-            tableLayoutPanel1.Controls.Add(right_event_set, 3, 3);
-            tableLayoutPanel1.Controls.Add(left_event_set, 2, 3);
-            tableLayoutPanel1.Controls.Add(down_event_set, 1, 3);
-            tableLayoutPanel1.Controls.Add(ok_png, 4, 0);
-            tableLayoutPanel1.Controls.Add(right_png, 3, 0);
-            tableLayoutPanel1.Controls.Add(left_png, 2, 0);
-            tableLayoutPanel1.Controls.Add(down_png, 1, 0);
-            tableLayoutPanel1.Controls.Add(up_png, 0, 0);
-            tableLayoutPanel1.Controls.Add(up_event_set, 0, 3);
-            tableLayoutPanel1.Controls.Add(up_mode_lbl, 0, 1);
-            tableLayoutPanel1.Controls.Add(down_mode_lbl, 1, 1);
-            tableLayoutPanel1.Controls.Add(left_mode_lbl, 2, 1);
-            tableLayoutPanel1.Controls.Add(right_mode_lbl, 3, 1);
-            tableLayoutPanel1.Controls.Add(ok_mode_lbl, 4, 1);
-            tableLayoutPanel1.Location = new Point(39, 327);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 5;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 22F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 40.9090919F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 59.0909081F));
-            tableLayoutPanel1.Size = new Size(795, 166);
-            tableLayoutPanel1.TabIndex = 20;
+            settingsTableLayoutPanel.AutoSize = true;
+            settingsTableLayoutPanel.ColumnCount = 5;
+            settingsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            settingsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            settingsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            settingsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            settingsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            settingsTableLayoutPanel.Controls.Add(panel5, 4, 2);
+            settingsTableLayoutPanel.Controls.Add(panel4, 3, 2);
+            settingsTableLayoutPanel.Controls.Add(panel3, 2, 2);
+            settingsTableLayoutPanel.Controls.Add(panel2, 1, 2);
+            settingsTableLayoutPanel.Controls.Add(up_rb_panel, 0, 2);
+            settingsTableLayoutPanel.Controls.Add(ok_event_set, 4, 3);
+            settingsTableLayoutPanel.Controls.Add(right_event_set, 3, 3);
+            settingsTableLayoutPanel.Controls.Add(left_event_set, 2, 3);
+            settingsTableLayoutPanel.Controls.Add(down_event_set, 1, 3);
+            settingsTableLayoutPanel.Controls.Add(ok_png, 4, 0);
+            settingsTableLayoutPanel.Controls.Add(right_png, 3, 0);
+            settingsTableLayoutPanel.Controls.Add(left_png, 2, 0);
+            settingsTableLayoutPanel.Controls.Add(down_png, 1, 0);
+            settingsTableLayoutPanel.Controls.Add(up_png, 0, 0);
+            settingsTableLayoutPanel.Controls.Add(up_event_set, 0, 3);
+            settingsTableLayoutPanel.Controls.Add(up_mode_lbl, 0, 1);
+            settingsTableLayoutPanel.Controls.Add(down_mode_lbl, 1, 1);
+            settingsTableLayoutPanel.Controls.Add(left_mode_lbl, 2, 1);
+            settingsTableLayoutPanel.Controls.Add(right_mode_lbl, 3, 1);
+            settingsTableLayoutPanel.Controls.Add(ok_mode_lbl, 4, 1);
+            settingsTableLayoutPanel.Location = new Point(39, 327);
+            settingsTableLayoutPanel.Name = "settingsTableLayoutPanel";
+            settingsTableLayoutPanel.RowCount = 5;
+            settingsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
+            settingsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 22F));
+            settingsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 25F));
+            settingsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 40.9090919F));
+            settingsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 59.0909081F));
+            settingsTableLayoutPanel.Size = new Size(795, 166);
+            settingsTableLayoutPanel.TabIndex = 20;
             // 
             // panel5
             // 
@@ -830,7 +830,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
             ClientSize = new Size(1122, 636);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(settingsTableLayoutPanel);
             Controls.Add(disconnect_btn);
             Controls.Add(connection_panel);
             Controls.Add(nav_back);
@@ -862,7 +862,7 @@
             ((System.ComponentModel.ISupportInitialize)nav_ok).EndInit();
             ((System.ComponentModel.ISupportInitialize)nav_back).EndInit();
             connection_panel.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
+            settingsTableLayoutPanel.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel4.ResumeLayout(false);
@@ -907,7 +907,7 @@
         private Panel connection_panel;
         private Button disconnect_btn;
         private ComboBox up_event_set;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel settingsTableLayoutPanel;
         private PictureBox ok_png;
         private PictureBox right_png;
         private PictureBox left_png;

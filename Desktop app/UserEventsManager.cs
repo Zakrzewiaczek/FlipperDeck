@@ -1,67 +1,119 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FlipperDeck
 {
-    public class UserEventsManager
+    public class UserEventsManager : IDisposable
     {
-        private readonly List<ComboBox> event_set_boxes = new();
-        private readonly List<string> event_context = new(10);
-        private readonly string user_events_file = "user_events.fds";
-
-        public UserEventsManager(List<ComboBox> boxes)
+        private readonly List<string> boxesList = new(10);
+        private readonly List<string> contentList = new(10);
+        private bool _disposed;
+        public UserEventsManager()
         {
-            for (int index = 0; index < 10; index++)
+            for (int i = 0; i < boxesList.Capacity; i++)
             {
-                event_set_boxes.Add(index < boxes.Count ? boxes[index] : new ComboBox());
-                event_context.Add(string.Empty);
+                boxesList.Add("None");
+                contentList.Add(string.Empty);
             }
         }
 
-        public void SaveUserEvent(int index, ComboBox box, string context)
+        public void SaveUserEvent(int index, string box, string content)
         {
-            event_set_boxes[index] = box;
-            event_context[index] = context;
+            if (index >= 0 && index < boxesList.Count)
+            {
+                boxesList[index] = box;
+                contentList[index] = content;
+            }
         }
-        public (ComboBox, string) GetUserEvent(int index)
+
+        public (string, string) GetUserEvent(int index)
         {
-            return (event_set_boxes[index], event_context[index]);
+            if (index >= 0 && index < boxesList.Count)
+            {
+                return (boxesList[index], contentList[index]);
+            }
+
+            return (string.Empty, string.Empty);
+        }
+
+        public IEnumerable<string> GetAllSavedEventBoxes(bool[] isHeldChecked)
+        {
+            List<string> return_list = new(5);
+
+            for(int index = 0; index < isHeldChecked.Length; index++)
+            {
+                int index_to_add = isHeldChecked[index] ? index + 4 : index;
+                return_list.Add(boxesList[index_to_add]);
+            }
+
+            return return_list;
+        }
+
+        public IEnumerable<string> GetAllSavedEventContents(bool[] isHeldChecked)
+        {
+            List<string> return_list = new(5);
+
+            for (int index = 0; index < isHeldChecked.Length; index++)
+            {
+                int index_to_add = isHeldChecked[index] ? index + 4 : index;
+                return_list.Add(contentList[index_to_add]);
+            }
+
+            return return_list;
         }
 
         public void SaveUserEventsToFile()
         {
-            using (StreamWriter sw = new(user_events_file))
+            using StreamWriter writer = new("user_events.txt");
+            foreach (var (box, content) in boxesList.Zip(contentList, (b, c) => (b, c)))
             {
-                for (int index = 0; index < event_set_boxes.Count; index++)
-                {
-                    sw.WriteLine(event_set_boxes[index].Text);
-                    sw.WriteLine(event_context[index]);
-                }
-
-                sw.Close();
-            };
+                writer.WriteLine($"{box},{content}");
+            }
         }
+
         public void LoadUserEventsFromFile()
         {
-            if (!File.Exists(user_events_file))
-                return;
-
-            using (StreamReader sr = new(user_events_file))
+            if (File.Exists("user_events.txt"))
             {
-                for (int index = 0; sr.EndOfStream; index++)
+                boxesList.Clear();
+                contentList.Clear();
+
+                using StreamReader reader = new("user_events.txt");
+                string line;
+                while ((line = reader.ReadLine() ?? string.Empty) != string.Empty)
                 {
-                    string box_text = sr.ReadLine() ?? string.Empty;
-                    string context = sr.ReadLine() ?? string.Empty;
-
-                    event_set_boxes[index].Text = box_text;
-                    event_context.Add(context);
+                    string[] parts = line.Split(',');
+                    if (parts.Length == 2)
+                    {
+                        boxesList.Add(parts[0]);
+                        contentList.Add(parts[1]);
+                    }
                 }
+            }
+        }
 
-                sr.Close();
-            };
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_disposed) return;
+
+            if (disposing)
+            {
+                // Dispose managed resources
+                boxesList.Clear();
+                contentList.Clear();
+            }
+
+            _disposed = true;
         }
     }
 }

@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|c:\\users\\jzakr\\desktop\\pliki\\visual studio projects\\flipperdeck\\desktop app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|c:\\users\\jzakr\\desktop\\pliki\\visual studio projects\\flipperdeck\\desktop app\\usereventsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E703C6DC-F14F-4A38-A370-C475CD3768E9}|FlipperDeck.csproj|solutionrelative:usereventsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,48 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserEventsManager.cs",
+              "DocumentMoniker": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\UserEventsManager.cs",
+              "RelativeDocumentMoniker": "UserEventsManager.cs",
+              "ToolTip": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\UserEventsManager.cs",
+              "RelativeToolTip": "UserEventsManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T11:57:32.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAADwv8YAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T06:32:32.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\jzakr\\Desktop\\Pliki\\Visual Studio Projects\\FlipperDeck\\Desktop app\\Form1.cs [Projekt]",
+              "RelativeToolTip": "Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T06:32:20.645Z",
+              "EditorCaption": " [Projekt]"
             }
           ]
         }
